@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Launch Node Debug",
+    "type": "node",
+    "request": "launch",
+    "restart": false,
+    "stopOnEntry": false,
+    "args": ["build/start.js"],
+    "cwd": "${workspaceRoot}",
+    "console": "integratedTerminal",
+    "sourceMaps": true,
+    "outFiles": ["${workspaceRoot}/build/**/*.js"],
+    "protocol": "inspector",
+    "envFile": "${workspaceFolder}/.env",
+	  "autoAttachChildProcesses": true,
+    "skipFiles": [
+      "<node_internals>/**/*.js"
+    ]
+  }]
+}
